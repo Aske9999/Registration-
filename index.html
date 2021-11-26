@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>REGISTRATION</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<div class="main">
+    <div class="container">
+        <h1 class="title">GOOD HEALTH MEDICAL CLINIC</h1>
+        <h2 class="motto">
+            Wealth is nothing without HEALTH
+        </h2>
+        <div class="buttons">
+            <button class="buttons-regForm" id="regFormBtn" type="button">FORM</button>
+            <button class="buttons-signIn" id="signInBtn" type="button">SIGN IN</button>
+        </div>
+        <div class="health-box">
+            <img class="health" src="images/health.jpeg" alt="health">
+        </div>
+    </div>
+    <form class="container flex-container" name="registration" hidden id="form" >
+        <h2 class="sub-title">APPLICATION FORM</h2>
+        <label class="name" for="name">Patient Name:</label>
+        <input name="name" autocomplete="off" id="name" type="text" placeholder="Name">
+        <br>
+        <label class="name" for="surname">Patient Surname:</label>
+        <input name="surname" autocomplete="off" id="surname" type="text" placeholder="Surname">
+        <br>
+        <label class="name" for="date">Date of Birth:</label>
+        <input name="date" autocomplete="off" id="date" type="date">
+        <br>
+        <label class="name" for="age">Age:</label>
+        <input name="age" autocomplete="off" id="age" type="number" value="0">
+        <br>
+        <div class="name-gender">
+            <div class="name">Gender:</div>
+            <div>
+                <label class="name-gender" for="male">
+                    <input class="name-gender-input" name="gender" id="male" type="radio" value="M">
+                    Male</label>
+                <label class="name-gender" for="female">
+                    <input class="name-gender-input" name="gender" id="female" type="radio" value="F">
+                    Female</label><br>
+            </div>
+        </div>
+        <label class="name" for="address">Address:</label>
+        <input name="address" autocomplete="off" id="address" type="text" placeholder="#9 Manas Street, Bishkek city, Kyrgyzstan">
+        <br>
+        <label class="name" for="phone">Phone:</label>
+        <input name="phone" autocomplete="off" id="phone" type="number" placeholder="996777777777">
+        <br>
+        <label class="name" for="email">Email:</label>
+        <input name="email" autocomplete="off" id="email" type="email" placeholder="user@gmail.com">
+        <br>
+        <label class="name" for="sign-in-password">Password:</label>
+        <input name="password" id="reg-form-password" type="password" placeholder="***********">
+        <br>
+        <label class="name-condition" for="confirm">
+            <input class="conditions" name="conditions" id="confirm" type="checkbox">
+            <i>I confirm all above information about myself!</i>
+        </label><br>
+        <div class="regResBtn">
+            <button name="regBtn" class="regBtn" id="regBtn" type="submit">Register</button>
+            <button name="regBtn" class="regBtn" id="resetBtn" type="reset">Reset</button>
+        </div>
+    </form>
+
+    <form class="container flex-container" name="signIn" hidden id="signIn">
+        <h2 class="sub-title">SIGN IN</h2>
+        <label class="name" for="sign-in-email">Email:</label>
+        <input name="signIn" id="sign-in-email" type="email" placeholder="user@gmail.com">
+        <br>
+        <label class="name" for="sign-in-password">Password:</label>
+        <input name="signIn-password" id="sign-in-password" type="password" placeholder="***********">
+        <br>
+        <div class="regResBtn">
+            <button class="regBtn" id="enterBtn" type="submit">Sign In</button>
+        </div>
+    </form>
+</div>
+
+</body>
+
+<script src="script/script.js"></script>
+</html>
